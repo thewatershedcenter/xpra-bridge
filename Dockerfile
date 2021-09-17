@@ -12,4 +12,4 @@ RUN apt update \
 ENTRYPOINT ["xpra", "start", ":80", "--bind-tcp=0.0.0.0:8080", \
  "--mdns=no", "--webcam=no", "--no-daemon",
 # "--start-on-connect=lxterminal", \
- "--start=xhost +"]
+ "--start=xhost +"] 
