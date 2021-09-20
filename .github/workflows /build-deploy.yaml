@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - main
+      - master
   # Let's also trigger a build and publish of your container when 
   # you release a new version. You can use "created" here instead of published.
   release:
@@ -15,7 +16,7 @@ on:
 
 jobs:
   deploy-images:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
 
     # Define your registry and repository here.
     # These are for the GitHub Container registry, you can also use
