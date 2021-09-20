@@ -22,7 +22,7 @@ jobs:
     # These are for the GitHub Container registry, you can also use
     # Quay.io or another OCI registry
     env:
-      registry: ghcr.io
+      registry: quay.io
       username: kulpojke
       repository: xpra-bridge     
 
@@ -68,7 +68,7 @@ jobs:
         with:
           registry: ${{ env.registry }}
           username: ${{ env.username }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.QUAY_TOKEN }}
 
           # Example variables for a non GitHub registry like Quay or Docker Hub
           # username: ${{ secrets.DOCKERHUB_USERNAME }}
