@@ -10,6 +10,7 @@ RUN apt update \
  && DEBIAN_FRONTEND=noninteractive apt install -y xpra \
  && mkdir -p /run/user/0/xpra
 ENTRYPOINT ["xpra", "start", ":80", "--bind-tcp=0.0.0.0:8080", \
- "--mdns=no", "--webcam=no", "--no-daemon",
+ "--mdns=no", "--webcam=no", "--no-daemon"
+#"--start=xhost +"
 # "--start-on-connect=lxterminal", \
- "--start=xhost +"] 
+ ] 
