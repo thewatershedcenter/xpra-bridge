@@ -23,7 +23,7 @@ jobs:
     # Quay.io or another OCI registry
     env:
       registry: quay.io
-      username: wrtc
+      username: kulpojke
       repository: xpra-bridge     
 
     strategy:
