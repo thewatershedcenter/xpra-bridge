@@ -37,7 +37,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set Container Tag Normal
+      - name: Set Container Tag Normal 
         run: |
           container="${${{ env.repository }}:${{ matrix.dockerfile[1] }}"
           echo "container=${container}"
